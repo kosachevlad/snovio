@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <!-- Favicon -->
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon"> 
+    <!--OG-->
+    <meta property="og:title" content="title" />
+    <meta property="og:description" content='description' />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="#">
+    <meta property="og:site_name" content="#" />
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sociotrack</title>
+    <!-- style -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<main>
+		<aside>
+			<div class="top-header">
+				<a href="#">
+					<img src="img/sociotrack-logo.svg" alt="sociotrack-logo">
+				</a>
+			</div>
+			<div class="profile">
+				<a href="#">
+					<div class="profile__avatar">
+					</div>
+				</a>
+				<div class="profile__info">
+					<div class="name">
+						Abhisek Das <img src="img/chevron.png">
+					</div>
+					<div class="followers">
+						10,968 Followers
+						<img src="img/Trophy.png" alt="trophy" style="display: none">
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<ul class="menu__items">
+					<li class="menu__item">
+						<a href="#" class="active">
+							<img src="img/dashboard-icon.svg" alt="dashboard-icon">
+							Dashboard
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">
+							<img src="img/social-feed-icon.svg" alt="social-feed-icon">
+							Social Feed
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">
+							<img src="img/invite-friends-icon.svg" alt="invite-friends-icon">
+							Invite Friends
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">
+							<img src="img/settings-icon.svg" alt="settings-icon">
+							Settings
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">
+							<img src="img/log-out-icon.svg" alt="log-out-icon">
+							Log out
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer">
+				<div class="line"></div>
+				<ul class="footer__nav">
+					<li class="footer__nav-item">
+						<a href="#">
+							About
+						</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#">
+							Terms
+						</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#">
+							Privacy
+						</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#">
+							Help
+						</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#">
+							Report
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			
+		</aside>
+		<div class="content">
+			<div class="main-header">
+				<input type="text">
+				<div class="icon-block">
+					<a href="#" class="notification">
+						<div class="note-block">
+							<img src="img/notification-icon.svg" alt="notification-icon" class="notification">
+							<div class="note-number">2</div>
+						</div>
+					</a>
+					<a href="#" class="search">
+						<img src="img/search-icon.svg" alt="search">
+					</a>
+					
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="content-dashboard">
+					<div class="heading">
+						<div class="username">
+							@abhisek.das
+						</div>
+						<ul class="date-tabs">
+							<li>
+								<a href="#" class="active">
+									Last day
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Week
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Month
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="social-button">
+							+ Add Social Profile
+						</a>
+					</div>
+					<div class="profiles" id="profiles">
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="modal fade" style="display: none">
+		<div class="modal-window">
+			<a href="#" class="close-modal"></a>
+			<div class="heading">
+				Add Social Profile
+			</div>
+			<p>
+				Add new social profile for tracking
+			</p>
+			<span>URL</span>
+			<form action="#">
+				<input type="url" name="url" class="social-input" placeholder="https://twitter.com/username">
+				<button type="submit" class="lookup-social">Lookup</button>
+			</form>
+			
+		</div>
+	</div>
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<script src='js/dist/script.js'></script>
+	<script src="js/dist/profile.js"></script>
+</body>
+</html>
